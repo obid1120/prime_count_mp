@@ -26,8 +26,8 @@ if __name__ == "__main__":
 
     processes = []
     start = perf_counter()
-    for i in range(1, 10_000_001, 2_500_000):
-        process = Process(target=prime_count, args=[i, i+2_499_999])
+    for i in range(1, 10_0001, 2_5000):
+        process = Process(target=prime_count, args=[i, i+2_4999])
         processes.append(process)
         process.start()
 
